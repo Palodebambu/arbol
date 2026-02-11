@@ -54,15 +54,21 @@
     var hold = 1;
 
     canvas.click(function (e) {
-        var offset = canvas.offset(), x, y;
-        x = e.pageX - offset.left;
-        y = e.pageY - offset.top;
-        if (seed.hover(x, y)) {
-            hold = 0;
-            canvas.unbind("click");
-            canvas.unbind("mousemove");
-            canvas.removeClass('hand');
-        }
+    var offset = canvas.offset(), x, y;
+    x = e.pageX - offset.left;
+    y = e.pageY - offset.top;
+
+    if (seed.hover(x, y)) {
+        hold = 0;
+
+        $("#intro").fadeOut(800); // 👈 ESTA LÍNEA ES LA CLAVE
+
+        canvas.unbind("click");
+        canvas.unbind("mousemove");
+        canvas.removeClass('hand');
+    }
+})
+
     }).mousemove(function (e) {
         var offset = canvas.offset(), x, y;
         x = e.pageX - offset.left;
