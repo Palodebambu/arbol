@@ -153,13 +153,9 @@
     }));
 
     runAsync().start();
-})();
-$(document).ready(function () {
-
-    $("#canvas").on("click", function () {
-        $("#intro").fadeOut(1000);
-    });
-
+    
+canvas.click(function () {
+    $("#intro").fadeOut(800);
 });
 
 
