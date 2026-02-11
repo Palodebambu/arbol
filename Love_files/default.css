@@ -63,7 +63,7 @@ a {
     position: absolute;
     top: 50%;
     left: 50%;
-    transform: translate(-50%, -40%);
+    transform: translate(-50%, - 10%);
 }
 #error {
 	margin: 0 auto;
