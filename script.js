@@ -14,7 +14,7 @@
 
     var opts = {
         seed: {
-            x: width / 2 - 20,
+            x: width / 2,
             color: "rgb(190, 26, 37)",
             scale: 2
         },
