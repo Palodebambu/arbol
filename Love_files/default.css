@@ -84,12 +84,13 @@ a {
 .space {
 	margin-right: 150px;
 }
+
 #intro {
     position: absolute;
-    top: 0;
-    left: 0;
     width: 100%;
     height: 100%;
+    z-index: 5;
+    pointer-events: none; /* MUY IMPORTANTE */
 }
 
 .circle {
