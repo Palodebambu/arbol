@@ -9,8 +9,9 @@
     var width = canvas.width();
     var height = canvas.height();
 
-    canvas.attr("width", width);
-    canvas.attr("height", height);
+   $("#canvas").attr("width", clientWidth);
+   $("#canvas").attr("height", clientHeight);
+
 
     var opts = {
         seed: {
