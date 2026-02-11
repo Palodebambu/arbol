@@ -154,5 +154,8 @@
 
     runAsync().start();
     
+canvas.click(function () {
+    $("#intro").fadeOut(800);
+});
 
 
