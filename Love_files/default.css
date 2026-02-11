@@ -95,29 +95,27 @@ a {
     position: absolute;
     top: 50%;
     left: 50%;
-    width: 0px;
-    height: 0px;
+    width: 0;
+    height: 0;
     transform: translate(-50%, -50%);
-    pointer-events: none; /* importante */
 }
 
 .circle img {
     position: absolute;
-    width: 900px;
-    height: 900px;
+    width: 85px;
+    height: 85px;
     object-fit: cover;
-    border-radius: 20px;
-    box-shadow: 0 0 25px hotpink;
+    border-radius: 15px;
+    box-shadow: 0 0 20px hotpink;
 
-    transform-origin: 0 -100px; /* distancia del círculo */
+    top: 0;
+    left: 0;
 }
-
-}
-.circle img:nth-child(1) { transform: rotate(0deg); }
-.circle img:nth-child(2) { transform: rotate(45deg); }
-.circle img:nth-child(3) { transform: rotate(90deg); }
-.circle img:nth-child(4) { transform: rotate(135deg); }
-.circle img:nth-child(5) { transform: rotate(180deg); }
-.circle img:nth-child(6) { transform: rotate(225deg); }
-.circle img:nth-child(7) { transform: rotate(270deg); }
-.circle img:nth-child(8) { transform: rotate(315deg); }
+.circle img:nth-child(1) { transform: rotate(0deg) translateX(220px) rotate(0deg); }
+.circle img:nth-child(2) { transform: rotate(45deg) translateX(220px) rotate(-45deg); }
+.circle img:nth-child(3) { transform: rotate(90deg) translateX(220px) rotate(-90deg); }
+.circle img:nth-child(4) { transform: rotate(135deg) translateX(220px) rotate(-135deg); }
+.circle img:nth-child(5) { transform: rotate(180deg) translateX(220px) rotate(-180deg); }
+.circle img:nth-child(6) { transform: rotate(225deg) translateX(220px) rotate(-225deg); }
+.circle img:nth-child(7) { transform: rotate(270deg) translateX(220px) rotate(-270deg); }
+.circle img:nth-child(8) { transform: rotate(315deg) translateX(220px) rotate(-315deg); }
