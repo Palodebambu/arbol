@@ -5,20 +5,25 @@
     <link rel="icon" type="image/x-icon" href="Love_files/icon.png">
     <meta name="language" content="es-ES">
     <meta name="title" content="title">
+
     <link type="text/css" rel="stylesheet" href="./Love_files/default.css">
-    <script type="text/javascript" src="./Love_files/jquery.min.js"></script>
-    <script type="text/javascript" src="./Love_files/jscex.min.js"></script>
-    <script type="text/javascript" src="./Love_files/jscex-parser.js"></script>
-    <script type="text/javascript" src="./Love_files/jscex-jit.js"></script>
-    <script type="text/javascript" src="./Love_files/jscex-builderbase.min.js"></script>
-    <script type="text/javascript" src="./Love_files/jscex-async.min.js"></script>
-    <script type="text/javascript" src="./Love_files/jscex-async-powerpack.min.js"></script>
-    <script type="text/javascript" src="./Love_files/functions.js" charset="utf-8"></script>
-    <script type="text/javascript" src="./Love_files/love.js" charset="utf-8"></script>
+
+    <script src="./Love_files/jquery.min.js"></script>
+    <script src="./Love_files/jscex.min.js"></script>
+    <script src="./Love_files/jscex-parser.js"></script>
+    <script src="./Love_files/jscex-jit.js"></script>
+    <script src="./Love_files/jscex-builderbase.min.js"></script>
+    <script src="./Love_files/jscex-async.min.js"></script>
+    <script src="./Love_files/jscex-async-powerpack.min.js"></script>
+    <script src="./Love_files/functions.js"></script>
+    <script src="./Love_files/love.js"></script>
 </head>
 
 <body>
-<div id="wrap">    
+
+<div id="wrap">
+
+    <!-- IMÁGENES EN CÍRCULO -->
     <div id="intro">
         <div class="circle">
             <img src="img/1.jpeg">
@@ -29,33 +34,32 @@
             <img src="img/6.jpeg">
             <img src="img/7.jpeg">
             <img src="img/8.jpeg">
-    </div>
-</div>
-
-<canvas id="canvas"></canvas>
-
-        <div id="wrap">
-            <div id="text">
-                <div id="code">
-                    <span class="say">Para el amor de mi vida:</span><br><br>
-                    <span class="say">Si pudiera elegir un lugar seguro, sería a tu lado.</span><br>
-                    <span class="say">Cuanto más tiempo estoy contigo más te amo.</span><br>
-                    <span class="say">Este texto es solo un ejemplo de demostración de lo mucho que te amo</span>
-                    <span class="say"><span class="space"></span> — I Love You!</span>
-                </div>
-            </div>
-            <div id="clock-box">
-                <a href="https://alexxdev.vercel.app/" target="_blank">Mi amor</a>
-                <a href="https://alexxdev.vercel.app/" target="_blank">por ti</a> comenzó hace...
-                <div id="clock"></div>
-            </div>
-
-            <canvas id="canvas" width="1100" height="680"></canvas>
         </div>
     </div>
-    <script src="script.js"></script>
+
+    <!-- TEXTO -->
+    <div id="text">
+        <div id="code">
+            <span class="say">Para el amor de mi vida:</span><br><br>
+            <span class="say">Si pudiera elegir un lugar seguro, sería a tu lado.</span><br>
+            <span class="say">Cuanto más tiempo estoy contigo más te amo.</span><br>
+            <span class="say">Este texto es solo un ejemplo de demostración de lo mucho que te amo</span>
+            <span class="say"><span class="space"></span> — I Love You!</span>
+        </div>
+    </div>
+
+    <!-- RELOJ -->
+    <div id="clock-box">
+        <a href="#" target="_blank">Mi amor</a>
+        comenzó hace...
+        <div id="clock"></div>
+    </div>
+
+    <!-- SOLO UN CANVAS -->
+    <canvas id="canvas" width="1100" height="680"></canvas>
+
+</div>
+
 </body>
-
-
-
 </html>
+
