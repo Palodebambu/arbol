@@ -154,3 +154,24 @@
 
     runAsync().start();
 })();
+$(document).ready(function () {
+
+    const images = document.querySelectorAll(".circle img");
+    const radius = 220;
+    const total = images.length;
+
+    images.forEach((img, index) => {
+        const angle = (index / total) * (2 * Math.PI);
+        const x = radius * Math.cos(angle);
+        const y = radius * Math.sin(angle);
+
+        img.style.left = 250 + x - 60 + "px";
+        img.style.top = 250 + y - 60 + "px";
+    });
+
+    $("#canvas").on("click", function () {
+        $("#intro").fadeOut(1000);
+    });
+
+});
+
