@@ -533,12 +533,13 @@
     window.Tree = Tree;
 
 })(window);
+
 // -------- IMÁGENES EN CÍRCULO --------
 $(document).ready(function () {
 
-    // Cuando se hace click en el canvas (corazón)
     $("#canvas").on("click", function () {
-        $(".foto-circular").fadeOut(800);
+        $("#intro").fadeOut(800);
     });
 
 });
+
